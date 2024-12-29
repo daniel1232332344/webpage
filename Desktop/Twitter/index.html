@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Test</title>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@YourTwitterHandle">
+    <meta name="twitter:title" content="Dynamic Content Test">
+    <meta name="twitter:description" content="Testing dynamic engagement with Twitter Cards.">
+    <meta name="twitter:image" content="https://yourdomain.com/test-image.jpg">
+
+    <!-- Optional: Dynamically change content using JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            console.log("Page loaded!");
+            fetch("https://your-server.com/track-visit", { method: "POST" }); // Example of dynamic tracking
+        });
+    </script>
+</head>
+<body>
+    <h1>Dynamic Content Test Page</h1>
+    <p>This page is for testing interactions from Twitter Cards.</p>
+
+    <!-- Tracking Pixel: When the page loads, this image will trigger a request to the server -->
+    <img src="https://your-server.com/pixel.png" style="display:none;" alt="Tracking Pixel">
+
+    <!-- Example Content -->
+    <img src="https://yourdomain.com/sample-image.jpg" alt="Sample Image">
+</body>
+</html>
